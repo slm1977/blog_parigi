@@ -6,7 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-        console.log("DOC PRONTO");
+        console.log("DOC PRONTO...");
 
         function getHeight(){
 
@@ -15,7 +15,7 @@
 
         }
 
-        $('#textarea').keyup(function(event){
+        $('#textarea').keydown(function(event){
 
             while ( getHeight() > $(this).height()) {
                 $(this).css('font-size', '-=1');
@@ -33,6 +33,9 @@
         });
 
         $('#textarea').html("{{rist['quartiere']}}");
+        var e = jQuery.Event("keydown");
+        e.which = 16; // # Some key code value
+        $("#textarea").trigger(e);
 
 });
 
