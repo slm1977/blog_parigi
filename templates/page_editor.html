@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="editor">
+    <p>{{content|safe}}</p>
+</div>
+<script src="{{url_for('static', filename='ckeditor/ckeditor.js')}}"></script>
+<script>
+ document.getElementById("editor").value = "<p>Some other editor data.</p>";
+
+    var ed = CKEDITOR.replace( 'editor' ,{
+                                            toolbar: 'Basic',
+                                            uiColor: '#9AB8F3'
+                                            }
+                                       );
+
+
+    // The "change" event is fired whenever a change is made in the editor.
+    ed.on( 'change', function( evt ) {
+        // getData() returns CKEditor's HTML content.
+     //console.log( 'Total bytes: ' + evt.editor.getData().length );
+    });
+
+    ed.on( 'uploadingImage', function( evt ) {
+        // getData() returns CKEditor's HTML content.
+     console.log( 'Upload della immagine!');
+        });
+
+
+</script>
+</body>
+</html>
