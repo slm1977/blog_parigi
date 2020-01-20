@@ -40,22 +40,19 @@
           }).addTo(map);
 
           // markers creative commons
-          //https://mapicons.mapsmarker.com/numbers-letters/numbers/?style=classic&custom_color=d607d6
+           //https://mapicons.mapsmarker.com/numbers-letters/numbers/?style=classic&custom_color=d607d6
           //https://wiki.openstreetmap.org/wiki/Marker_API#Examples
 
-          // Target's GPS coordinates.
-          var opera_garnier = L.latLng('48.872210', '2.331601');
-          var champs= L.latLng('48.870007', '2.307820');
-          var arc =  L.latLng('48.874010', '2.295006');
+        let marker_coords;
+         {% for i in range( itinerario[0]["mappa"]|length ) %}
+         console.log("analizzo il...");
+         marker_coords = L.latLng( {{ itinerario[0]["mappa"][i]["lat_lon"][0] }}, {{ itinerario[0]["mappa"][i]["lat_lon"][1] }} );
+         L.marker(marker_coords, {icon: getIcon({{i+1}})}).addTo(map);
+         {% endfor %}
 
-
-          // Place a markers on the same location.
-          L.marker(opera_garnier, {icon: getIcon(1)}).addTo(map);
-          L.marker(champs, {icon: getIcon(2)}).addTo(map);
-          L.marker(arc, {icon: getIcon(3)}).addTo(map);
 
           // Set map's center to target with zoom 14.
-          map.setView(opera_garnier, 13);
+          map.setView(marker_coords, 12);
 
 
         });
@@ -64,15 +61,27 @@
     </script>
 
     <style>
+
+    table {
+          border-collapse: collapse;
+        }
+
+    table, th, td {
+        border: 1px solid black;
+        padding: 20px;
+        min-width:100px;
+        }
+
        /* Set the size of the div element that contains the map */
       #osm-map {
         height: 300px;  /* The height is 400 pixels */
         width: 300px;  /* The width is the width of the web page */
+        margin: 20px;
        }
     </style>
   </head>
   <body>
-    <h3>I miei itinerari</h3>
+    <h3>{{itinerario[0]["titolo"]}}</h3>
     <!--The div element for the map -->
     <div id="map"></div>
 
@@ -84,6 +93,35 @@
   <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
 <link href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" rel="stylesheet"/>
 
-<div id="osm-map"></div>
+
+<table>
+  <tr>
+  <th>
+      <table>
+          <tr>
+            <th>Da visitare</th>
+            <th>Orari</th>
+            <th>Biglietti</th>
+            <th>Note</th>
+          </tr>
+         {% for i in range( itinerario[0]["mappa"]|length ) %}
+              <tr>
+                <td>{{i+1}}) {{itinerario[0]["mappa"][i]["nome"]}}</td>
+                <td>{{itinerario[0]["mappa"][i]["orari"]}}</td>
+                <td>{{itinerario[0]["mappa"][i]["biglietti"]}}</td>
+                <td>{{itinerario[0]["mappa"][i]["note"]}}</td>
+              </tr>
+        {% endfor %}
+
+      </table>
+    </th>
+
+    <th>
+        <div id="osm-map"></div>
+    </th>
+
+
+  </tr>
+  </table>
   </body>
 </html>
