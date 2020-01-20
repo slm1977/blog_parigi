@@ -3,8 +3,8 @@ import os
 
 from restaurants_reader import readRestaurants
 
-#flask_ip="192.168.0.118:5000"
-flask_ip="127.0.0.1:5000"
+flask_ip="192.168.0.118:5000"
+#flask_ip="127.0.0.1:5000"
 
 def generate_quartiere(quartiere, pages):
     print("Creazione pagine %s per quartiere %s" , (pages, quartiere))

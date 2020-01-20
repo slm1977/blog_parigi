@@ -56,6 +56,24 @@ def upload_file():
     </form>
     '''
 
+@app.route("/itinerari/")
+def itinerari():
+
+    esempio = [
+        {"titolo" : "Domenica 20 luglio", "note" : "",
+         "mappa" : [{"nome" : "Opera Garnier", "orari" :"tutti i giorni 10 - 18 ultimo accesso 17,30",
+                     "biglietti" : "10 euro", "lat_lon":('48.872210', '2.331601')},
+                    {"nome": "Champs Elisèe", "orari": "",
+                     "biglietti": "", "lat_lon": ('48.870007', '2.307820')},
+
+                    {"nome": "Arc de Triomphe", "orari": "",
+                     "biglietti": "", "lat_lon": ('48.874010', '2.295006')},
+
+                    ]
+         }
+    ]
+    return render_template("itinerari_map.html", itinerario=esempio)
+
 @app.route("/collage/")
 def collage():
     return redirect(url_for("static", filename="collage/index.html"))
