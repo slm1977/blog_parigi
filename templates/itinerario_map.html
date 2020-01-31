@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+    //https://gis.stackexchange.com/questions/43766/downloading-metro-stations-of-paris-from-openstreetmap
+      $(document).ready(function() {
+        console.log("DOC PRONTO");
+
+        function getIcon(number)
+        {
+           console.log("Numero:" + number);
+           url = "/static/markers/number_" + number + ".png";
+          return L.icon({
+                          iconUrl: url,
+
+                          //iconSize:     [38, 95], // size of the icon
+                          //shadowSize:   [50, 64], // size of the shadow
+                          //iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+                          //shadowAnchor: [4, 62],  // the same for the shadow
+                          //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+                      });
+        }
+
+         // Where you want to render the map.
+          var element = document.getElementById('osm-map');
+
+          // Height has to be set. You can do this in CSS too.
+          element.style = 'height:300px;';
+
+          // https://leafletjs.com/examples/custom-icons/
+
+
+          // Create Leaflet map on map element.
+          var map = L.map(element);
+
+          // Add OSM tile leayer to the Leaflet map.
+          L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+              attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+          }).addTo(map);
+
+          // markers creative commons
+           //https://mapicons.mapsmarker.com/numbers-letters/numbers/?style=classic&custom_color=d607d6
+          //https://wiki.openstreetmap.org/wiki/Marker_API#Examples
+
+        let marker_coords;
+         {% for i in range( itinerario[0]["mappa"]|length ) %}
+         console.log("analizzo il...");
+         marker_coords = L.latLng( {{ itinerario[0]["mappa"][i]["lat_lon"][0] }}, {{ itinerario[0]["mappa"][i]["lat_lon"][1] }} );
+         L.marker(marker_coords, {icon: getIcon({{i+1}})}).addTo(map);
+         {% endfor %}
+
+
+          // Set map's center to target with zoom 14.
+          map.setView(marker_coords, 12);
+
+
+        });
+
+
+    </script>
+
+    <style>
+
+    table {
+          border-collapse: collapse;
+        }
+
+    table, th, td {
+        border: 1px solid black;
+        padding: 20px;
+        min-width:100px;
+        }
+
+       /* Set the size of the div element that contains the map */
+      #osm-map {
+        height: 300px;  /* The height is 400 pixels */
+        width: 300px;  /* The width is the width of the web page */
+        margin: 20px;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>{{itinerario[0]["titolo"]}}</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <script>
+
+
+    </script>
+
+  <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+<link href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" rel="stylesheet"/>
+
+
+<table>
+  <tr>
+  <th>
+      <table>
+          <tr>
+            <th>Da visitare</th>
+            <th>Orari</th>
+            <th>Biglietti</th>
+            <th>Note</th>
+          </tr>
+         {% for i in range( itinerario[0]["mappa"]|length ) %}
+              <tr>
+                <td>{{i+1}}) {{itinerario[0]["mappa"][i]["nome"]}}</td>
+                <td>{{itinerario[0]["mappa"][i]["orari"]}}</td>
+                <td>{{itinerario[0]["mappa"][i]["biglietti"]}}</td>
+                <td>{{itinerario[0]["mappa"][i]["note"]}}</td>
+              </tr>
+        {% endfor %}
+
+      </table>
+    </th>
+
+    <th>
+        <div id="osm-map"></div>
+    </th>
+
+
+  </tr>
+  </table>
+  </body>
+</html>
