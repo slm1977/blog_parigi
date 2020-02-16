@@ -23,7 +23,7 @@ def create_app():
     UPLOAD_FOLDER = 'static/uploaded_images'
 
     app.config['SECRET_KEY'] = '9OLWxND4o83j4K4iuopO'
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///paris_blog_db.sqlite'
     app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
     db.init_app(app)
@@ -40,8 +40,8 @@ def create_app():
         return User.query.get(int(user_id))
 
     # blueprint for auth routes in our app
-    #from .auth import auth as auth_blueprint
-    #app.register_blueprint(auth_blueprint)
+    from .auth import auth as auth_blueprint
+    app.register_blueprint(auth_blueprint)
 
 
     # blueprint for non-auth parts of app

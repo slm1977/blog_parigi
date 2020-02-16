@@ -4,13 +4,6 @@
 <h1> Amici di Micky... a Parigi!!</h1>
 {% endblock %}
 
-{% block navbar %}
-<div class="navbar navbar-fixed-top">
-  <!-- ... -->
-</div>
-{% endblock %}
-
-
 {% block scripts %}
 <!--<script src="{{url_for('.static', filename='myscripts.js')}}"></script> -->
 {{super()}}
@@ -59,8 +52,32 @@
 
 
 {% block content %}
+
+
+
 <div class="container" style="background-image: url({{url_for('static', filename='sfondi/parigiRatatouille_1200.gif')}});">
-<h1 class="titolo">Amici di Micky... a Parigi!!</h1>
+
+<nav class="navbar navbar-inverse">
+<div id="navbarMenuHeroA" class="navbar-menu">
+         {% if current_user.is_authenticated %}
+                  <a class="navbar-brand" href="#">Ciao, {{ current_user.name }}</a>
+            {% endif %}
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="nav navbar-nav">
+                      {% if not current_user.is_authenticated %}
+                            <li><a class="nav-item nav-link" href="{{url_for('auth.login')}}">Login</a></li>
+                    {% else %}
+                    <li><a href="{{url_for('main.page_editor')}}">Nuova pagina</a></li>
+                    <li><a href="{{url_for('auth.logout')}}">Logout</a></li>
+                    {% endif %}
+
+                </ul>
+            </div>
+</div>
+</nav>
+
+    <h1 class="titolo">Amici di Micky... a Parigi!!</h1>
 
 <div class="row">
  <!--<div class="col-md-2"></div>-->

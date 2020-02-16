@@ -1,6 +1,8 @@
 from flask import Flask,  Blueprint, render_template, request, redirect, url_for, send_from_directory
-
+from flask_login import login_required, current_user
 import os
+from .models import Page
+from . import db
 
 from .ristoranti import ristoranti
 from .itinerari import itinerari
@@ -27,7 +29,6 @@ def mostraItinerari():
 
 @main.route("/")
 def presentazione():
-    #return render_template("home.html")
     return render_template("blog_content.html", pagina=pagine["presentazione"])
 
 
@@ -94,9 +95,13 @@ def video(quartiere,n):
 
 
 @main.route("/editor/")
+@login_required
 def page_editor():
     #send_from_directory("static", 'itinerari/itinerario_01.html')
-    f = open("static/itinerari/itinerario_01_updated.html", "r")
+    print(os.getcwd())
+    #print(url_for("static", filename="itinerari/itinerario_01.html"))
+
+    f = open("./project/static/itinerari/itinerario_01.html", "r")
     content = f.read()
     f.close()
     return render_template("page_editor.html", content=content)
@@ -104,12 +109,45 @@ def page_editor():
 @main.route("/save/", methods=["POST"])
 def save_page():
     form_data = request.form['content']
-    print("Content:\n%s" % str(form_data))
-    f = open("static/itinerari/itinerario_01_updated.html", "w")
-    f.write(form_data)
-    f.close()
-    return "Pagina salvata"
+    index = request.form.get('menu_index')
+    menu_title = request.form.get('menu_title')
+    print("Salvo con menu %s e indice %s" % (menu_title, index))
 
+    # restituisce il path completo dove salvare il file
+    filenameToSave = add_page_to_db(menu_title=menu_title,index=index)
+    if filenameToSave!=None:
+        #print("Content:\n%s" % str(form_data))
+        print("Percorso di salvataggio:%s" % filenameToSave)
+        f = open(filenameToSave, "w")
+        f.write(form_data)
+        f.close()
+        return "Pagina salvata (%s)" % filenameToSave
+    return "Si sono verificati problemi nel salvare la pagina."
+
+
+
+def getPageFilename(name):
+    return "%s.html " % name.replace("'","").lower().replace(".","_").replace(" ","_").replace('à','a').replace('è','e').replace('ì','i').replace('ò','o').replace('ù','u')
+
+def add_page_to_db(menu_title, index, page_id=None):
+    try:
+        if page_id==None:
+            # create new page with the form data. Hash the password so plaintext version isn't saved.
+            filename= getPageFilename(menu_title)
+            path = "./project/static/menu_pages/%s" % filename
+            new_page = Page(menu_title=menu_title,path=path, index=int(index))
+
+            # add the new page to the database
+            db.session.add(new_page)
+            db.session.commit()
+            return path
+
+    except Exception as ex:
+        print("Eccezione nella scrittura della pagina sul db:%s" % ex)
+        raise ex
+        return None
+
+    return None
 #
 # FILE UPLOAD CODE
 #

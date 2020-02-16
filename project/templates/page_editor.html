@@ -22,7 +22,10 @@
                 $.ajax({
                     type: frm.attr('method'),
                     url: frm.attr('action'),
-                    data: { 'content': CKEDITOR.instances.editor.getData()},
+                    data: { 'content': CKEDITOR.instances.editor.getData(),
+                    menu_index : $('#menu_index').val(),
+                    menu_title : $('#menu_title').val()
+                    },
                     success: function (data) {
                         console.log('Submission was successful.');
                         console.log(data);
@@ -44,17 +47,40 @@
 </head>
 <body>
 <form id="editing_form" method="POST", action="{{url_for("main.save_page")}}">
+<p>
+
+    <div class="field">
+        <div class="control">
+            <label for="menu_title">Voce sul menu della pagina: </label>
+            <input name="menu_title" id="menu_title"  type="text" value="" required/><br>
+        </div>
+    </div>
+
+<div class="field">
+        <div class="control">
+        <label for="menu_index">Posizione sul menu della pagina: </label>
+        <input name="menu_index" id="menu_index" type="number" value="" required/><br>
+    </div>
+</div>
+
+    <input type="submit" value="Salva"/> <p id="formResponse"></p>
+</p>
+
+
+
     <div id="editor" name="editor_div">
         <p id="page_content">{{content|safe}}</p>
     </div>
-<input type="submit" value="Invia"/>
+
 </form>
-<p id="formResponse"></p>
+
+
+
 
 <script src="{{url_for('static', filename='ckeditor/ckeditor.js')}}"></script>
 <script>
  document.getElementById("editor").value = "<p>Some other editor data.</p>";
-    CKFinder.setupCKEditor();
+    //CKFinder.setupCKEditor();
     var ed = CKEDITOR.replace( 'editor' ,{
                                             toolbar: 'Basic',
                                             uiColor: '#9AB8F3'
@@ -66,6 +92,7 @@
     CKEDITOR.instances.editor.on( 'change', function( evt ) {
         // getData() returns CKEditor's HTML content.
      //console.log( 'Total bytes: ' + evt.editor.getData().length );
+     $('#formResponse').html('<span style="color:red;">Da salvare</span>');
     });
 
     CKEDITOR.instances.editor.on( 'uploadingImage', function( evt ) {

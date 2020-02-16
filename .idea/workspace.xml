@@ -2,738 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6556381-9ae8-4122-a423-03111f4720e6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/project/db.sqlite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/dependencies.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/templates/blog_itinerari.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/templates/itinerario_map.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/templates/page_editor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/templates/presentazione.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/project/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/project/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itinerari.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/itinerari.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/risorse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/risorse.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/changelog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/changelog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/extras/jGestures-license.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/extras/jGestures-license.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/extras/jgestures.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/extras/jgestures.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/extras/jquery-ui-1.8.20.custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/extras/jquery-ui-1.8.20.custom.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/extras/jquery.min.1.7.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/extras/jquery.min.1.7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/extras/jquery.mousewheel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/extras/jquery.mousewheel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/extras/modernizr.2.5.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/extras/modernizr.2.5.3.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/basic/css/basic.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/basic/css/basic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/basic/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/basic/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/basic/js/basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/basic/js/basic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/basic/pages/pagina2.scrollpng" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/basic/pages/pagina2.scrollpng" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/docs/css/docs.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/docs/css/docs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/docs/css/jquery.ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/docs/css/jquery.ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/docs/css/jquery.ui.html4.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/docs/css/jquery.ui.html4.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/docs/js/docs.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/docs/js/docs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/docs/pics/loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/docs/pics/loader.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/double-page/css/double-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/double-page/css/double-page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/double-page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/double-page/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/css/jquery.ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/css/jquery.ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/css/jquery.ui.html4.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/css/jquery.ui.html4.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/css/magazine.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/css/magazine.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/js/magazine.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/js/magazine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/pages/1-regions.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/pages/1-regions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/pages/10-regions.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/pages/10-regions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/pages/11-regions.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/pages/11-regions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/pages/12-regions.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/pages/12-regions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/pages/2-regions.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/pages/2-regions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/pages/3-regions.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/pages/3-regions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/pages/4-regions.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/pages/4-regions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/pages/5-regions.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/pages/5-regions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/pages/6-regions.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/pages/6-regions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/pages/7-regions.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/pages/7-regions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/pages/8-regions.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/pages/8-regions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/pages/9-regions.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/pages/9-regions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/pics/loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/pics/loader.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/magazine/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/magazine/slider.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/css/jquery.ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/css/jquery.ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/css/jquery.ui.html4.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/css/jquery.ui.html4.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/css/steve-jobs-html4.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/css/steve-jobs-html4.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/css/steve-jobs.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/css/steve-jobs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/fonts/Stempel-Garamond-W01-Roman.woff" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/fonts/Stempel-Garamond-W01-Roman.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/js/steve-jobs.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/js/steve-jobs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page10.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page100.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page100.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page101.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page101.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page102.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page102.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page103.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page103.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page104.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page104.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page105.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page105.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page106.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page107.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page106.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page108.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page107.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page109.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page108.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page11.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page110.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page109.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page12.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page13.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page14.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page15.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page16.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page16.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page17.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page17.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page18.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page18.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page19.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page19.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page20.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page20.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page21.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page21.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page22.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page22.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page23.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page23.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page24.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page24.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page25.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page25.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page26.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page26.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page27.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page27.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page28.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page28.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page29.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page29.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page30.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page30.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page31.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page31.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page32.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page32.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page33.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page33.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page34.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page34.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page35.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page35.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page36.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page36.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page37.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page37.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page38.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page38.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page39.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page39.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page40.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page40.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page41.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page41.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page42.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page42.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page43.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page43.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page44.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page44.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page45.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page45.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page46.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page46.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page47.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page47.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page48.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page48.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page49.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page49.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page5.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page50.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page50.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page51.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page51.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page52.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page52.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page53.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page53.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page54.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page54.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page55.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page55.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page56.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page56.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page57.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page57.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page58.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page58.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page59.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page59.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page6.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page110.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page60.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page60.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page61.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page61.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page62.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page62.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page63.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page63.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page64.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page64.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page65.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page65.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page66.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page66.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page67.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page67.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page68.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page68.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page69.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page69.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page7.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page70.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page70.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page71.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page71.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page72.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page72.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page73.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page73.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page74.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page74.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page75.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page75.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page76.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page76.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page77.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page77.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page78.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page78.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page79.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page79.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page8.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page80.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page80.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page81.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page81.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page82.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page82.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page83.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page83.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page84.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page84.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page85.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page85.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page86.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page86.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page87.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page87.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page88.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page88.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page89.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page89.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page9.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page90.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page90.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page91.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page91.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page92.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page92.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page93.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page93.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page94.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page94.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page95.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page95.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page96.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page96.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page97.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page97.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page98.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page98.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pages/page99.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pages/page99.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/samples/steve-jobs/pics/loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/samples/steve-jobs/pics/loader.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/turnjs4/turnjs4-api-docs.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/project/libs/turnjs4/turnjs4-api-docs.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/pages_generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurants_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/restaurants_reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ristoranti.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/ristoranti.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/CHANGES.md" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/CHANGES.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/adapters/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/adapters/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/build-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/build-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/ckeditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/contents.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/contents.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/lang/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/az.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/az.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/en-au.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/en-au.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/es-mx.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/es-mx.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/oc.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/oc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/about/dialogs/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/about/dialogs/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/autocomplete/skins/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/autocomplete/skins/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/clipboard/dialogs/paste.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/clipboard/dialogs/paste.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/colordialog/dialogs/colordialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/colordialog/dialogs/colordialog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/colordialog/dialogs/colordialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/colordialog/dialogs/colordialog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/copyformatting/cursors/cursor-disabled.svg" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/copyformatting/cursors/cursor-disabled.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/copyformatting/cursors/cursor.svg" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/copyformatting/cursors/cursor.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/copyformatting/styles/copyformatting.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/copyformatting/styles/copyformatting.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/dialog/dialogDefinition.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/dialog/dialogDefinition.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/dialog/styles/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/dialog/styles/dialog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/div/dialogs/div.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/div/dialogs/div.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/emoji/assets/iconsall.svg" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/emoji/assets/iconsall.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/emoji/emoji.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/emoji/emoji.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/emoji/skins/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/emoji/skins/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/find/dialogs/find.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/find/dialogs/find.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/flash/dialogs/flash.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/flash/dialogs/flash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/forms/dialogs/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/forms/dialogs/button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/forms/dialogs/checkbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/forms/dialogs/checkbox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/forms/dialogs/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/forms/dialogs/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/forms/dialogs/hiddenfield.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/forms/dialogs/hiddenfield.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/forms/dialogs/radio.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/forms/dialogs/radio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/forms/dialogs/select.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/forms/dialogs/select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/forms/dialogs/textarea.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/forms/dialogs/textarea.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/forms/dialogs/textfield.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/forms/dialogs/textfield.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/forms/images/hiddenfield.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/forms/images/hiddenfield.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/iframe/dialogs/iframe.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/iframe/dialogs/iframe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/image/dialogs/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/image/dialogs/image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/link/dialogs/anchor.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/link/dialogs/anchor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/link/dialogs/link.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/link/dialogs/link.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/liststyle/dialogs/liststyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/liststyle/dialogs/liststyle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/pagebreak/images/pagebreak.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/pagebreak/images/pagebreak.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/pastefromgdocs/filter/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/pastefromgdocs/filter/default.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/pastefromword/filter/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/pastefromword/filter/default.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/pastetools/filter/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/pastetools/filter/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/preview/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/preview/preview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/scayt/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/scayt/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/scayt/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/scayt/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/scayt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/scayt/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/scayt/dialogs/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/scayt/dialogs/dialog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/scayt/dialogs/options.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/scayt/dialogs/options.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/scayt/dialogs/toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/scayt/dialogs/toolbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/simage/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/simage/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/simage/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/simage/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/dialogs/smiley.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/dialogs/smiley.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/angel_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/angel_smile.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/angry_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/angry_smile.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/broken_heart.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/broken_heart.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/confused_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/confused_smile.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/cry_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/cry_smile.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/devil_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/devil_smile.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/embaressed_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/embaressed_smile.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/embarrassed_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/embarrassed_smile.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/envelope.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/envelope.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/heart.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/heart.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/kiss.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/kiss.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/lightbulb.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/lightbulb.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/omg_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/omg_smile.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/regular_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/regular_smile.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/sad_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/sad_smile.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/shades_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/shades_smile.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/teeth_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/teeth_smile.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/thumbs_down.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/thumbs_down.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/thumbs_up.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/thumbs_up.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/tongue_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/tongue_smile.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/tounge_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/tounge_smile.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/smiley/images/wink_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/smiley/images/wink_smile.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/af.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/az.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/az.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/cy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/en-au.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/en-au.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/en-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/en-ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/eo.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/eo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/es-mx.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/es-mx.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/et.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/eu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/gl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/he.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/hr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/km.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/ku.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/ku.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/lt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/lv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/nb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/no.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/no.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/oc.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/oc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/si.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/si.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/sl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/sq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/sr-latn.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/sr-latn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/sr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/sv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/th.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/tt.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/tt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/ug.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/ug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/lang/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/lang/zh.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/specialchar/dialogs/specialchar.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/specialchar/dialogs/specialchar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/table/dialogs/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/table/dialogs/table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/tableselection/styles/tableselection.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/tableselection/styles/tableselection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/tabletools/dialogs/tableCell.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/tabletools/dialogs/tableCell.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/templates/dialogs/templates.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/templates/dialogs/templates.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/templates/dialogs/templates.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/templates/dialogs/templates.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/templates/templates/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/templates/templates/default.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/templates/templates/images/template1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/templates/templates/images/template1.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/templates/templates/images/template2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/templates/templates/images/template2.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/templates/templates/images/template3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/templates/templates/images/template3.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/wsc/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/wsc/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/wsc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/wsc/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/wsc/dialogs/ciframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/wsc/dialogs/wsc.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/wsc/dialogs/wsc.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/wsc/dialogs/wsc.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/wsc/dialogs/wsc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/wsc/dialogs/wsc_ie.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/css/samples.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/css/samples.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/img/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/img/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/js/sample.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/js/sample.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/js/sf.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/js/sf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/ajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/ajax.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/api.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/appendto.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/appendto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/assets/posteddata.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/assets/posteddata.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/assets/sample.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/assets/uilanguages/languages.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/assets/uilanguages/languages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/datafiltering.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/datafiltering.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/dialog/assets/my_dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/dialog/assets/my_dialog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/dialog/dialog.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/dialog/dialog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/divreplace.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/divreplace.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/emoji/emoji.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/emoji/emoji.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/enterkey/enterkey.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/enterkey/enterkey.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/htmlwriter/outputforflash.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/htmlwriter/outputforflash.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/htmlwriter/outputhtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/htmlwriter/outputhtml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/inlineall.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/inlineall.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/inlinebycode.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/inlinebycode.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/inlinetextarea.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/inlinetextarea.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/jquery.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/jquery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/magicline/magicline.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/magicline/magicline.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/readonly.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/readonly.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/replacebyclass.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/replacebyclass.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/replacebycode.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/replacebycode.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/sample.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/sample.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/sample.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/sample.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/sample_posteddata.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/sample_posteddata.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/tabindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/tabindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/toolbar/toolbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/toolbar/toolbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/uicolor.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/uicolor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/uilanguages.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/uilanguages.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/wysiwygarea/fullpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/wysiwygarea/fullpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/old/xhtmlstyle.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/old/xhtmlstyle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/toolbarconfigurator/css/fontello.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/toolbarconfigurator/font/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/toolbarconfigurator/font/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/toolbarconfigurator/font/fontello.eot" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/toolbarconfigurator/font/fontello.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/toolbarconfigurator/font/fontello.svg" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/toolbarconfigurator/font/fontello.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/toolbarconfigurator/font/fontello.woff" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/toolbarconfigurator/font/fontello.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/toolbarconfigurator/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/toolbarconfigurator/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/skins/moono-lisa/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/skins/moono-lisa/dialog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/skins/moono-lisa/dialog_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/skins/moono-lisa/dialog_ie.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/skins/moono-lisa/dialog_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/skins/moono-lisa/dialog_ie8.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/skins/moono-lisa/dialog_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/skins/moono-lisa/dialog_iequirks.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/skins/moono-lisa/editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/skins/moono-lisa/editor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/skins/moono-lisa/editor_gecko.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/skins/moono-lisa/editor_gecko.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/skins/moono-lisa/editor_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/skins/moono-lisa/editor_ie.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/skins/moono-lisa/editor_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/skins/moono-lisa/editor_ie8.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/skins/moono-lisa/editor_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/skins/moono-lisa/editor_iequirks.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/skins/moono-lisa/images/spinner.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/skins/moono-lisa/images/spinner.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/skins/moono-lisa/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/skins/moono-lisa/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/vendor/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/ckeditor/vendor/promise.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/collage/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/collage/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/collage/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/css/polaroid-gallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/collage/css/polaroid-gallery.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/collage/data/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/data/data2.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/collage/data/data2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/img/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/collage/img/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/img/img01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/img/img02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/img/img03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/img/img04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/img/img05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/img/img06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/img/img07.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/img/img08.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/img/img09.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/img/img10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/img/img11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/img/img12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/img/img13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/img/img14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/img/img15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/img/polaroid-gallery.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/collage/img/polaroid-gallery.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/collage/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/js/polaroid-gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/collage/js/polaroid-gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/collage/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/collage/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/basic.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/css/basic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/fonts/DancingScriptOT.woff" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/css/fonts/DancingScriptOT.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/fonts/DancingScriptOT.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/css/fonts/DancingScriptOT.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/extras/jGestures-license.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/extras/jGestures-license.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/extras/jgestures.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/extras/jgestures.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/extras/jquery-ui-1.8.20.custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/extras/jquery-ui-1.8.20.custom.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/extras/jquery.min.1.7.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/extras/jquery.min.1.7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/extras/jquery.mousewheel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/extras/jquery.mousewheel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/extras/modernizr.2.5.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/extras/modernizr.2.5.3.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fotoblog/presentazione.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fotoblog/ristoranti/la_taverne_de_montmartre/latavernedemontmartre.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/itinerari/itinerario_01.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/itinerari/itinerario_01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/js/basic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_101.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_102.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_103.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_104.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_105.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_106.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_107.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_108.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_109.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_110.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_111.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_112.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_113.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_114.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_115.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_116.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_117.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_118.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_119.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_120.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_121.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_122.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_123.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_124.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_125.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_126.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_127.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_129.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_130.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_131.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_132.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_133.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_134.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_135.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_136.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_137.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_138.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_139.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_140.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_141.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_142.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_143.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_145.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_146.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_147.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_148.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_149.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_151.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_152.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_153.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_154.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_155.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_156.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_157.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_158.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_159.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_160.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_161.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_162.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_163.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_164.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_165.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_166.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_167.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_168.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_169.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_170.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_171.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_172.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_173.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_174.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_175.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_176.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_177.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_178.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_179.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_180.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_181.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_182.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_183.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_184.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_185.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_186.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_187.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_188.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_189.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_190.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_191.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_193.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_194.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_195.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_196.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_197.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_198.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_199.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_200.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_53.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_55.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_58.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_59.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_61.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_62.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_63.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_65.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_66.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_67.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_68.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_69.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_70.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_71.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_72.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_73.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_74.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_75.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_76.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_77.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_78.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_79.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_80.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_81.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_82.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_83.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_84.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_85.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_86.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_87.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_88.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_89.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_90.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_91.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_92.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_93.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_94.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_95.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_97.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_98.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/markers/number_99.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/sfondi/copertina_ristoranti3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/sfondi/parigiRatatouille_1200.gif" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/sfondi/parigiRatatouille_1200.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_restaurants_back.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/base_restaurants_back.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_restaurants_front.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/base_restaurants_front.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_restaurants_front2.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/base_restaurants_front2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_restaurants_front_title.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/base_restaurants_front_title.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_restaurants_front_title2.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/base_restaurants_front_title2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_restaurants_left.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/base_restaurants_left.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_restaurants_left2.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/base_restaurants_left2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_restaurants_right.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/base_restaurants_right.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_restaurants_right2.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/base_restaurants_right2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_restaurants_right_images.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/base_restaurants_right_images.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_restaurants_right_ok.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/base_restaurants_right_ok.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog_content.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/blog_content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog_itinerari.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/blog_itinerario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog_itinerario.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog_restaurant.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/blog_restaurant.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog_restaurants.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/blog_restaurants.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/book.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/book2.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/book2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/itinerario_blocco_map.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/itinerario_blocco_map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/itinerario_map.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/page_editor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/paypal_messenger.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/paypal_messenger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/presentazione.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rest_page_back.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/rest_page_back.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rest_page_front.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/rest_page_front.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rest_page_front_title.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/rest_page_front_title.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rest_page_left.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/rest_page_left.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rest_page_right.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/rest_page_right.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rest_page_right_images.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/rest_page_right_images.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testi.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/testi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/project/paris_blog_db.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/static/itinerari/itinerario_01_updated.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/itinerari/itinerario_01_updated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/templates/page_editor.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/page_editor.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -744,65 +23,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            <state relative-caret-position="245">
+              <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+              <folding>
+                <element signature="e#0#101#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog_restaurants.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/templates/blog_restaurants.html">
+      <file leaf-file-name="page_editor.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/templates/page_editor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="40" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog_restaurant.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project/templates/blog_restaurant.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog_itinerario.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/templates/blog_itinerario.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="itinerario_map.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/templates/itinerario_map.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="itinerario_blocco_map.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/templates/itinerario_blocco_map.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog_itinerari.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/templates/blog_itinerari.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+            <state relative-caret-position="323">
+              <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -810,8 +47,8 @@
       <file leaf-file-name="blog_content.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/templates/blog_content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state>
+              <caret column="25" selection-start-column="25" selection-end-column="25" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -819,11 +56,44 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1159">
-              <caret line="61" column="69" selection-start-line="61" selection-start-column="69" selection-end-line="61" selection-end-column="69" />
+            <state relative-caret-position="418">
+              <caret line="70" column="60" selection-start-line="70" selection-start-column="60" selection-end-line="70" selection-end-column="60" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="21" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -831,8 +101,8 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
-              <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+            <state relative-caret-position="322">
+              <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
               <folding>
                 <element signature="e#117#140#0" expanded="true" />
               </folding>
@@ -845,8 +115,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -870,6 +140,7 @@
       <find>url_for(&quot;rest</find>
       <find>itin</find>
       <find>url_for(&quot;main</find>
+      <find>models</find>
     </findStrings>
     <replaceStrings>
       <replace>itinerario_block</replace>
@@ -908,12 +179,17 @@
         <option value="$PROJECT_DIR$/templates/page_editor.html" />
         <option value="$PROJECT_DIR$/dependencies.txt" />
         <option value="$PROJECT_DIR$/project/blog.py" />
-        <option value="$PROJECT_DIR$/project/__init__.py" />
-        <option value="$PROJECT_DIR$/project/templates/home.html" />
-        <option value="$PROJECT_DIR$/project/main.py" />
         <option value="$PROJECT_DIR$/project/templates/blog_itinerari.html" />
         <option value="$PROJECT_DIR$/project/templates/blog_restaurants.html" />
         <option value="$PROJECT_DIR$/project/templates/blog_restaurant.html" />
+        <option value="$PROJECT_DIR$/project/templates/base.html" />
+        <option value="$PROJECT_DIR$/project/auth.py" />
+        <option value="$PROJECT_DIR$/project/templates/test.html" />
+        <option value="$PROJECT_DIR$/project/__init__.py" />
+        <option value="$PROJECT_DIR$/project/models.py" />
+        <option value="$PROJECT_DIR$/project/templates/home.html" />
+        <option value="$PROJECT_DIR$/project/templates/page_editor.html" />
+        <option value="$PROJECT_DIR$/project/main.py" />
       </list>
     </option>
   </component>
@@ -945,6 +221,12 @@
               <item name="gitBlogMicky" type="b2602c69:ProjectViewProjectNode" />
               <item name="gitBlogMicky" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gitBlogMicky" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gitBlogMicky" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -959,14 +241,15 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/project/libs/main" />
-      <recent name="$PROJECT_DIR$/project" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/project/templates" />
       <recent name="$PROJECT_DIR$/project" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/project/libs/main" />
+      <recent name="$PROJECT_DIR$/project" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1028,12 +311,12 @@
       <window_info anchor="bottom" id="Run" order="8" sideWeight="0.91265893" weight="0.49568966" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32984293" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3372093" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3275862" />
-      <window_info content_ui="combo" x="857" y="254" width="270" height="596" id="Project" order="0" sideWeight="0.7644231" visible="true" weight="0.27031508" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.34590518" />
+      <window_info active="true" content_ui="combo" x="857" y="254" width="270" height="596" id="Project" order="0" sideWeight="0.8056013" visible="true" weight="0.1912659" />
       <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32939914" />
-      <window_info id="Structure" order="1" sideWeight="0.23557693" side_tool="true" visible="true" weight="0.27031508" />
+      <window_info id="Structure" order="1" sideWeight="0.19439869" side_tool="true" visible="true" weight="0.1912659" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.91265893" weight="0.39547414" />
       <window_info id="Favorites" order="2" sideWeight="0.52684563" side_tool="true" weight="0.24875621" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1048,41 +331,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project/templates/blog_itinerario.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/presentazione.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/testi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/base_restaurants_left.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4617">
-          <caret line="243" column="29" selection-start-line="243" selection-start-column="29" selection-end-line="243" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/templates/rest_page_front_title.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1286,20 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/static/itinerari/itinerario_01_updated.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/page_editor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/dependencies.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1321,82 +555,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/testi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1843">
-          <caret line="97" column="33" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/blog_content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
-          <folding>
-            <element signature="e#117#140#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1159">
-          <caret line="61" column="69" selection-start-line="61" selection-start-column="69" selection-end-line="61" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/blog_itinerario.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/itinerario_map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/itinerario_blocco_map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/templates/blog_itinerari.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1411,6 +573,137 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/blog_itinerario.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/itinerario_map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/itinerario_blocco_map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/paypal_messenger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-693" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="6" selection-start-line="7" selection-end-line="26" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/static/itinerari/itinerario_01_updated.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/testi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="97" column="33" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
+          <folding>
+            <element signature="e#117#140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="70" column="60" selection-start-line="70" selection-start-column="60" selection-end-line="70" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/blog_content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/page_editor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+          <folding>
+            <element signature="e#0#101#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
