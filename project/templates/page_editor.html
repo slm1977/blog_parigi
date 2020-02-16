@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        // Shorthand for $( document ).ready()
+        $(function() {
+            console.log( "ready!" );
+
+            var frm = $('#editing_form');
+            //var ser = frm.serialize();
+            console.log("Form serializzato");
+            console.log($('#editing_form').html());
+            frm.submit(function (e) {
+
+                e.preventDefault();
+
+                $.ajax({
+                    type: frm.attr('method'),
+                    url: frm.attr('action'),
+                    data: { 'content': CKEDITOR.instances.editor.getData()},
+                    success: function (data) {
+                        console.log('Submission was successful.');
+                        console.log(data);
+                        $('#formResponse').html("Modifiche salvate");
+                    },
+                    error: function (data) {
+                        console.log('An error occurred.');
+                        console.log(data);
+                    },
+                });
+            });
+
+
+        });
+
+
+
+</script>
+</head>
+<body>
+<form id="editing_form" method="POST", action="{{url_for("main.save_page")}}">
+    <div id="editor" name="editor_div">
+        <p id="page_content">{{content|safe}}</p>
+    </div>
+<input type="submit" value="Invia"/>
+</form>
+<p id="formResponse"></p>
+
+<script src="{{url_for('static', filename='ckeditor/ckeditor.js')}}"></script>
+<script>
+ document.getElementById("editor").value = "<p>Some other editor data.</p>";
+    CKFinder.setupCKEditor();
+    var ed = CKEDITOR.replace( 'editor' ,{
+                                            toolbar: 'Basic',
+                                            uiColor: '#9AB8F3'
+                                            }
+                                       );
+
+
+    // The "change" event is fired whenever a change is made in the editor.
+    CKEDITOR.instances.editor.on( 'change', function( evt ) {
+        // getData() returns CKEditor's HTML content.
+     //console.log( 'Total bytes: ' + evt.editor.getData().length );
+    });
+
+    CKEDITOR.instances.editor.on( 'uploadingImage', function( evt ) {
+        // getData() returns CKEditor's HTML content.
+     console.log( 'Upload della immagine!');
+        });
+
+        ed.on( 'imageUploaded', function( evt ) {
+        // getData() returns CKEditor's HTML content.
+        console.log( 'Immagine uploadata!');
+        });
+
+     CKEDITOR.instances.editor.on( 'save', function( evt ) {
+     console.log("Saving...");
+     });
+
+
+</script>
+</body>
+</html>
