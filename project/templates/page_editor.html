@@ -1,20 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+
+<form style="margin-left:10px;" id="editing_form" method="POST", action="{{url_for("main.save_page")}}">
+<p>
+
+    <div class="field">
+        <div class="control">
+            <label for="menu_title">Voce sul menu della pagina: </label>
+            <input name="menu_title" id="menu_title"  type="text" value="{{page.menu_title if page != None }}" required/><br>
+        </div>
+    </div>
+
+<div class="field">
+        <div class="control">
+        <label for="menu_index">Posizione sul menu della pagina: </label>
+        <input name="menu_index"  id="menu_index" type="number" value="{{page.index if page != None else 1 }}" required/><br>
+    </div>
+</div>
+
+<!-- Button trigger modal -->
+    <button type="button" id="exitButton" class="btn btn-primary">
+      Esci
+    </button>
+
+    <input type="submit" id="saveButton" class="btn btn-primary" value="Salva"/>
+
+<div style="margin-top:10px;" class="alert" role="alert" id="formResponse">
+</div>
+</p>
+
+
+
+    <div id="editor" name="editor_div">
+        <p id="page_content">{{content|safe}}</p>
+    </div>
+
+</form>
+
+
+<!-- Modal -->
+<div class="modal fade" id="confirmExitModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modifiche non ancora salvate</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Salvare le modifiche prima di uscire?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="exitFromEditing(true)" data-dismiss="modal">Si</button>
+        <button type="button" class="btn btn-secondary" onclick="exitFromEditing(false)" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulla</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Modal -->
+
+{% endblock %}
+
+
+{% block scripts %}
+<!--<script src="{{url_for('.static', filename='myscripts.js')}}"></script> -->
+{{super()}}
 
     <script type="text/javascript">
+
+    var exitRequest = false;
+    var modified = false;
+
+ function exitOrSave()
+    {
+     if (!modified)
+     window.location.href="{{url_for('main.presentazione')}}";
+     else
+     {
+        $('#confirmExitModal').modal('show');
+      }
+    }
+
+function exitFromEditing(saveOnExit)
+        {
+        exitRequest = true;
+        //$('#confirmExitModal').modal('hide');
+        if (saveOnExit && modified==true)
+        {
+        $('#saveButton').submit();
+        }
+        else
+        {
+          window.location.href="{{url_for('main.presentazione')}}";
+        }
+
+          //<a style={'margin:20px;'} href="{{url_for('main.presentazione')}}">Annulla</a>
+          //<button onclick="exitFromEditing()">Esci</button>
+        }
+
+
+
 
         // Shorthand for $( document ).ready()
         $(function() {
             console.log( "ready!" );
+            exitRequest = false;
+            modified = false;
+
+            $("#exitButton").click(function(){
+                    exitOrSave();
+                  });
+
 
             var frm = $('#editing_form');
             //var ser = frm.serialize();
             console.log("Form serializzato");
             console.log($('#editing_form').html());
+
+
             frm.submit(function (e) {
 
                 e.preventDefault();
@@ -29,61 +135,56 @@
                     success: function (data) {
                         console.log('Submission was successful.');
                         console.log(data);
-                        $('#formResponse').html("Modifiche salvate");
+                        if (data["success"]  == true)
+                            {
+                                modified = false;
+                                $('#formResponse').removeClass("alert-danger");
+                                $('#formResponse').addClass("alert-success");
+                                $('#formResponse').html(data["message"]);
+
+                                if (exitRequest==true)
+                                window.location.href="{{url_for('main.presentazione')}}";
+                            }
+                           else
+
+                                 {
+                                 // in caso di problemi annullo la richiesta di uscita
+                                 exitRequest = false;
+                                $('#formResponse').removeClass("alert-success");
+                                $('#formResponse').addClass("alert-danger");
+                                $('#formResponse').html(data["message"]);
+                                }
+
                     },
                     error: function (data) {
                         console.log('An error occurred.');
                         console.log(data);
+                        // in caso di problemi annullo la richiesta di uscita
+                        exitRequest==false;
+                        $('#formResponse').removeClass("alert-success");
+                        $('#formResponse').addClass("alert-danger");
+                        $('#formResponse').html("Si sono verificati problemi nel salvataggio: %s" % data);
                     },
                 });
             });
-
-
         });
 
 
-
 </script>
-</head>
-<body>
-<form id="editing_form" method="POST", action="{{url_for("main.save_page")}}">
-<p>
-
-    <div class="field">
-        <div class="control">
-            <label for="menu_title">Voce sul menu della pagina: </label>
-            <input name="menu_title" id="menu_title"  type="text" value="" required/><br>
-        </div>
-    </div>
-
-<div class="field">
-        <div class="control">
-        <label for="menu_index">Posizione sul menu della pagina: </label>
-        <input name="menu_index" id="menu_index" type="number" value="" required/><br>
-    </div>
-</div>
-
-    <input type="submit" value="Salva"/> <p id="formResponse"></p>
-</p>
-
-
-
-    <div id="editor" name="editor_div">
-        <p id="page_content">{{content|safe}}</p>
-    </div>
-
-</form>
-
 
 
 
 <script src="{{url_for('static', filename='ckeditor/ckeditor.js')}}"></script>
+
 <script>
+
+
+
  document.getElementById("editor").value = "<p>Some other editor data.</p>";
     //CKFinder.setupCKEditor();
     var ed = CKEDITOR.replace( 'editor' ,{
                                             toolbar: 'Basic',
-                                            uiColor: '#9AB8F3'
+                                            uiColor: '#F400A1'
                                             }
                                        );
 
@@ -92,7 +193,10 @@
     CKEDITOR.instances.editor.on( 'change', function( evt ) {
         // getData() returns CKEditor's HTML content.
      //console.log( 'Total bytes: ' + evt.editor.getData().length );
-     $('#formResponse').html('<span style="color:red;">Da salvare</span>');
+     modified = true;
+     $('#formResponse').removeClass("alert-success");
+     $('#formResponse').addClass("alert-danger");
+     $('#formResponse').html('Da salvare');
     });
 
     CKEDITOR.instances.editor.on( 'uploadingImage', function( evt ) {
@@ -111,5 +215,4 @@
 
 
 </script>
-</body>
-</html>
+{% endblock %}

@@ -1,8 +1,9 @@
-from flask import Flask,  Blueprint, render_template, request, redirect, url_for, send_from_directory
+from flask import Flask,  Blueprint, render_template, request, redirect, url_for, send_from_directory, jsonify
 from flask_login import login_required, current_user
 import os
 from .models import Page
 from . import db
+from .db_queries import get_pages, add_page_to_db, update_page
 
 from .ristoranti import ristoranti
 from .itinerari import itinerari
@@ -29,7 +30,18 @@ def mostraItinerari():
 
 @main.route("/")
 def presentazione():
-    return render_template("blog_content.html", pagina=pagine["presentazione"])
+    menu= get_pages()
+    return render_template("blog_content.html", pagina=pagine["presentazione"], menu=menu)
+
+@main.route("/load_page/<page_id>/")
+def load_page(page_id):
+    page = Page.query.filter_by(id=page_id).first()
+    f = open(page.path, "r")
+    content = f.read()
+    f.close()
+    pagina = {"contenuto" : content}
+    return render_template("blog_content.html", pagina=pagina, menu=get_pages(), page_id=page_id)
+
 
 
 @main.route("/aeroporti/")
@@ -93,18 +105,24 @@ def video(quartiere,n):
     myvideo = url_for("static", filename="fotoblog/ristoranti/levieuxbelleville.mp4")
     return render_template('rest_page_right.html', rist=r[n], myvideo=myvideo)
 
-
-@main.route("/editor/")
+@main.route("/create/")
 @login_required
-def page_editor():
-    #send_from_directory("static", 'itinerari/itinerario_01.html')
-    print(os.getcwd())
-    #print(url_for("static", filename="itinerari/itinerario_01.html"))
+def create_new_page():
+    return page_edit()
 
-    f = open("./project/static/itinerari/itinerario_01.html", "r")
-    content = f.read()
-    f.close()
-    return render_template("page_editor.html", content=content)
+@main.route("/edit/<page_id>/")
+@login_required
+def page_edit(page_id=None):
+    #send_from_directory("static", 'itinerari/itinerario_01.html')
+    #print(url_for("static", filename="itinerari/itinerario_01.html"))
+    if page_id==None:
+        return render_template("page_editor.html", content="", page=None)
+    else:
+        page = Page.query.filter_by(id=page_id).first()
+        f = open(page.path, "r")
+        content = f.read()
+        f.close()
+        return render_template("page_editor.html", content=content, page=page)
 
 @main.route("/save/", methods=["POST"])
 def save_page():
@@ -121,33 +139,17 @@ def save_page():
         f = open(filenameToSave, "w")
         f.write(form_data)
         f.close()
-        return "Pagina salvata (%s)" % filenameToSave
-    return "Si sono verificati problemi nel salvare la pagina."
+        result = {"success" : True, "message" : "Pagina salvata (%s)" % filenameToSave }
+        return jsonify(result)
+    result = {"success": False, "message": "Si sono verificati problemi nel salvare la pagina."}
+    return jsonify(result)
 
 
 
 def getPageFilename(name):
     return "%s.html " % name.replace("'","").lower().replace(".","_").replace(" ","_").replace('à','a').replace('è','e').replace('ì','i').replace('ò','o').replace('ù','u')
 
-def add_page_to_db(menu_title, index, page_id=None):
-    try:
-        if page_id==None:
-            # create new page with the form data. Hash the password so plaintext version isn't saved.
-            filename= getPageFilename(menu_title)
-            path = "./project/static/menu_pages/%s" % filename
-            new_page = Page(menu_title=menu_title,path=path, index=int(index))
 
-            # add the new page to the database
-            db.session.add(new_page)
-            db.session.commit()
-            return path
-
-    except Exception as ex:
-        print("Eccezione nella scrittura della pagina sul db:%s" % ex)
-        raise ex
-        return None
-
-    return None
 #
 # FILE UPLOAD CODE
 #
