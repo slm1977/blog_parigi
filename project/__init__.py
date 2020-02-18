@@ -48,8 +48,13 @@ def create_app():
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
 
+    # blueprint for editable pages
+    from .view_pages import pages as pages_blueprint
+    app.register_blueprint(pages_blueprint)
+
+
+
 
     return app
-
 
 

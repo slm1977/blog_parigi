@@ -13,3 +13,8 @@ class Page(UserMixin, db.Model):
     menu_title = db.Column(db.String(1000), unique=True)
     path = db.Column(db.String(1000), unique=True)
     index = db.Column(db.Integer)
+
+    def __repr__(self):
+        return "<Page: %s index:%s menu_title:%s filepath:%s>" % (self.id, self.index, self.menu_title, self.path)
+
+

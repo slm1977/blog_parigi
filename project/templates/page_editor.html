@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<form style="margin-left:10px;" id="editing_form" method="POST", action="{{url_for("main.save_page")}}">
+<form style="margin-left:10px;" id="editing_form" method="POST", action="{{url_for("pages.save_page")}}">
 <p>
 
     <div class="field">
@@ -165,9 +165,12 @@ function exitFromEditing(saveOnExit)
                         $('#formResponse').addClass("alert-danger");
                         $('#formResponse').html("Si sono verificati problemi nel salvataggio: %s" % data);
                     },
-                });
-            });
-        });
+                });// AJAX end
+
+
+            });  // frm submit end
+
+        }); // function END
 
 
 </script>

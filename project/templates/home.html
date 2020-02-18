@@ -68,8 +68,9 @@
                       {% if not current_user.is_authenticated %}
                             <li><a class="nav-item nav-link" href="{{url_for('auth.login')}}">Login</a></li>
                     {% else %}
-                    <li><a href="{{url_for('main.create_new_page')}}">Nuova pagina</a></li>
-                    <li><a href="{{url_for('main.page_edit',page_id=page_id)}}">Modifica pagina</a></li>
+                    <li><a href="{{url_for('pages.create_new_page')}}">Nuova pagina</a></li>
+                    <li><a href="{{url_for('pages.page_edit',page_id=page_id)}}">Modifica pagina</a></li>
+                    <li><a href="{{url_for('pages.sort_pages')}}">Ordina pagine</a></li>
                     <li><a href="{{url_for('auth.logout')}}">Logout</a></li>
                     {% endif %}
 
@@ -94,7 +95,7 @@
             <p></p>
             {% for p in menu %}
                 <h2>
-                    <a href="{{url_for('main.load_page', page_id=p.id)}}"  class="blog_menu dancing">{{p.menu_title}}</a>
+                    <a href="{{url_for('pages.load_page', page_id=p.id)}}"  class="blog_menu dancing">{{p.menu_title}}</a>
                 </h2>
            {% endfor %}
 

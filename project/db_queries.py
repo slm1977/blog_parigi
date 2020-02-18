@@ -27,6 +27,16 @@ def add_page_to_db(menu_title, index, page_id=None):
 
     return None
 
+
+def update_pages_index(id_list):
+    for i in range(len(id_list)):
+        page = Page.query.get(id_list[0])
+        page.index = (i+1)
+        db.session.commit()
+
+
+
+
 def update_page(page_id, new_path, new_index, new_menu_title):
     if page_id<0:
         return
