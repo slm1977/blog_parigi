@@ -26,7 +26,7 @@ ol.serialization li.placeholder:before {
 
 <h1>Ordine delle pagine nel menu</h1>
 
-<form style="margin-left:10px;" id="sorting_form" method="POST", action="{{url_for("pages.save_page")}}">
+<form style="margin-left:10px;" id="sorting_form" method="POST", action="{{url_for("pages.sort_pages")}}">
 <p>
 
 
@@ -52,6 +52,32 @@ ol.serialization li.placeholder:before {
   {% for p in pages %}
   <li id="{{p.id}}" class="serialize alert alert-success">{{p.menu_title}}</li>
    {% endfor %}
+
+
+
+    <!-- Modal -->
+<div class="modal fade" id="confirmExitModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modifiche non ancora salvate</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Salvare le modifiche prima di uscire?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="exitFromEditing(true)" data-dismiss="modal">Si</button>
+        <button type="button" class="btn btn-secondary" onclick="exitFromEditing(false)" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulla</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Modal -->
+
 {% endblock %}
 
 
@@ -62,10 +88,52 @@ ol.serialization li.placeholder:before {
 <script src="{{url_for('.static', filename='js/jquery_sortable.js')}}"></script>
 
     <script type="text/javascript">
+
+        var modified = false;
+        var exitRequest = false;
+
+
+        function exitOrSave()
+            {
+            console.log("SAVE OR EXIT");
+             if (!modified)
+             window.location.href="{{url_for('main.presentazione')}}";
+             else
+             {
+                $('#confirmExitModal').modal('show');
+              }
+            }
+
+    function exitFromEditing(saveOnExit)
+        {
+        exitRequest = true;
+        if (saveOnExit && modified==true)
+        {
+        $('#saveButton').submit();
+        }
+        else
+        {
+          window.location.href="{{url_for('main.presentazione')}}";
+        }
+
+          //<a style={'margin:20px;'} href="{{url_for('main.presentazione')}}">Annulla</a>
+          //<button onclick="exitFromEditing()">Esci</button>
+        }
+
+
+
         // Shorthand for $( document ).ready()
         $(function() {
 
-        var pages_id = [];
+        modified = false;
+
+        var pages_id = {{pages_id|tojson}};
+        console.log("Ordine iniziale pagine:");
+        console.log(pages_id);
+
+         $("#exitButton").click(function(){
+                    exitOrSave();
+                  });
 
         var group = $("ol.serialization").sortable({
                 group: 'limited_drop_targets',
@@ -82,6 +150,11 @@ ol.serialization li.placeholder:before {
                    console.log(pages_id);
 
                   _super($item, container);
+
+                  modified = true;
+                  $('#formResponse').removeClass("alert-success");
+                  $('#formResponse').addClass("alert-danger");
+                  $('#formResponse').html('Da salvare');
                 },
                 serialize: function (parent, children, isContainer) {
                   return isContainer ? children.join() : parent.attr("id");
@@ -100,7 +173,7 @@ ol.serialization li.placeholder:before {
                 $.ajax({
                     type: frm.attr('method'),
                     url: frm.attr('action'),
-                    data: { 'pages_id': CKEDITOR.instances.editor.getData(),
+                    data: { 'pages_id': pages_id,
 
                     },
                     success: function (data) {

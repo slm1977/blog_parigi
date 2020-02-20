@@ -1,9 +1,10 @@
 from flask import Flask,  Blueprint, render_template, request, redirect, url_for, send_from_directory, jsonify
 from flask_login import login_required, current_user
 import os
+import time
 from .models import Page
 from . import db
-from .db_queries import get_pages, add_page_to_db, update_page
+from .db_queries import get_pages, add_page_to_db, update_page, delete_page, update_pages_index
 
 pages = Blueprint('pages', __name__,template_folder='templates',static_folder='static')
 
@@ -23,10 +24,23 @@ def load_page(page_id):
     return render_template("blog_content.html", pagina=pagina, menu=get_pages(), page_id=page_id)
 
 
-@pages.route("/sort_pages/")
+@pages.route("/sort_pages/", methods=["GET", "POST"])
 @login_required
 def sort_pages():
-    return render_template("page_sorting.html", pages=get_pages())
+    if request.method=="GET":
+        pages_id = []
+        pages = get_pages()
+        for p in pages:
+            pages_id.append(p.id)
+        return render_template("page_sorting.html", pages=pages, pages_id=pages_id)
+    else:
+        pages_id = request.form['pages_id']
+        print("ID PAGINE DA AGGIORNARE:")
+        print(pages_id)
+        result = update_pages_index(pages_id)
+        return jsonify(result)
+
+
 
 @pages.route("/edit/<page_id>/")
 @login_required
@@ -44,14 +58,20 @@ def page_edit(page_id=None):
 
 
 @pages.route("/save/", methods=["POST"])
+@login_required
 def save_page():
     form_data = request.form['content']
-    index = request.form.get('menu_index')
     menu_title = request.form.get('menu_title')
-    print("Salvo con menu %s e indice %s" % (menu_title, index))
+    page_id = request.form.get('id')
+    print("Salvo con menu %s" % menu_title)
 
-    # crea una nuova pagina sul db e restituisce il path completo dove salvare il file
-    filenameToSave = add_page_to_db(menu_title=menu_title,index=index)
+    if page_id==None or int(page_id)<0:
+        # crea una nuova pagina sul db e restituisce il path completo dove salvare il file
+        filenameToSave = add_page_to_db(menu_title=menu_title)
+    else:
+        # aggiorna la pagina preesistente
+        filenameToSave = update_page(page_id,menu_title)
+
     # il file viene creato solo se la pagina è stata aggiunta correttamente sul db
     if filenameToSave!=None:
         #print("Content:\n%s" % str(form_data))
@@ -65,6 +85,13 @@ def save_page():
     return jsonify(result)
 
 
-
-def getPageFilename(name):
-    return "%s.html " % name.replace("'","").lower().replace(".","_").replace(" ","_").replace('à','a').replace('è','e').replace('ì','i').replace('ò','o').replace('ù','u')
+@pages.route("/delete/<page_id>")
+@login_required
+def remove_page(page_id):
+    print("RIMOZIONE PAGINA:%s" % page_id)
+    # rimuovo la pagina dal db
+    filepath = delete_page(page_id)
+    if filepath!=None:
+        newfile_path = "%s_deleted_%s" % (filepath, int(time.time()))
+        os.rename(filepath, newfile_path)
+    return redirect("/")

@@ -1,5 +1,5 @@
 {% extends "bootstrap/base.html" %}
-
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 {% block content %}
 
 <form style="margin-left:10px;" id="editing_form" method="POST", action="{{url_for("pages.save_page")}}">
@@ -8,14 +8,16 @@
     <div class="field">
         <div class="control">
             <label for="menu_title">Voce sul menu della pagina: </label>
-            <input name="menu_title" id="menu_title"  type="text" value="{{page.menu_title if page != None }}" required/><br>
+            <input name="menu_title" id="menu_title"  onchange="notifyChanges()" type="text" value="{{page.menu_title if page != None }}" required/><br>
+
         </div>
     </div>
 
+
 <div class="field">
-        <div class="control">
-        <label for="menu_index">Posizione sul menu della pagina: </label>
-        <input name="menu_index"  id="menu_index" type="number" value="{{page.index if page != None else 1 }}" required/><br>
+    <div class="control">
+        <label for="visible_state">Rendi la pagina visibile agli utenti: </label>
+        <input class="custom-control-input" type="checkbox"  id="visible_state" {{'checked' if page != None }}/><br>
     </div>
 </div>
 
@@ -25,6 +27,10 @@
     </button>
 
     <input type="submit" id="saveButton" class="btn btn-primary" value="Salva"/>
+
+    <button type="button" id="deleteButton" class="btn btn-danger">
+      Elimina
+    </button>
 
 <div style="margin-top:10px;" class="alert" role="alert" id="formResponse">
 </div>
@@ -39,7 +45,7 @@
 </form>
 
 
-<!-- Modal -->
+<!-- Modal Save Page -->
 <div class="modal fade" id="confirmExitModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -60,7 +66,31 @@
     </div>
   </div>
 </div>
-<!-- End of Modal -->
+<!-- End of Modal Save Page -->
+
+
+<!-- Modal Delete Page -->
+<div class="modal fade" id="confirmDeleteModal" tabindex="-1" role="dialog" aria-labelledby="confirmDeleteModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="confirmDeleteModalLongTitle">Eliminazione Pagina</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Si è sicuri di voler eliminare la pagina corrente?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick='deletePage()' data-dismiss="modal">Si</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Modal Save Page -->
+
 
 {% endblock %}
 
@@ -70,9 +100,9 @@
 {{super()}}
 
     <script type="text/javascript">
-
     var exitRequest = false;
     var modified = false;
+    var page_id = {{page.id if page != None else -1 }}
 
  function exitOrSave()
     {
@@ -83,6 +113,30 @@
         $('#confirmExitModal').modal('show');
       }
     }
+
+
+function confirmDeletePage()
+    {
+    $('#confirmDeleteModal').modal('show');
+    }
+
+function deletePage()
+{
+   var page_id = {{page.id if page != None else -1 }}
+   if (page_id<0)
+   window.location.href= "/"
+   else
+   window.location.href= "/delete/" + page_id;
+}
+
+
+function notifyChanges()
+{
+    modified = true;
+     $('#formResponse').removeClass("alert-success");
+     $('#formResponse').addClass("alert-danger");
+     $('#formResponse').html('Da salvare');
+}
 
 function exitFromEditing(saveOnExit)
         {
@@ -114,6 +168,11 @@ function exitFromEditing(saveOnExit)
                     exitOrSave();
                   });
 
+             $("#deleteButton").click(function(){
+                    confirmDeletePage();
+                  });
+
+
 
             var frm = $('#editing_form');
             //var ser = frm.serialize();
@@ -129,9 +188,9 @@ function exitFromEditing(saveOnExit)
                     type: frm.attr('method'),
                     url: frm.attr('action'),
                     data: { 'content': CKEDITOR.instances.editor.getData(),
-                    menu_index : $('#menu_index').val(),
-                    menu_title : $('#menu_title').val()
-                    },
+                             'menu_title' : $('#menu_title').val(),
+                             'id' : {{page.id if page != None else -1 }}
+                        },
                     success: function (data) {
                         console.log('Submission was successful.');
                         console.log(data);
@@ -178,7 +237,6 @@ function exitFromEditing(saveOnExit)
 
 
 <script src="{{url_for('static', filename='ckeditor/ckeditor.js')}}"></script>
-
 <script>
 
 
@@ -196,10 +254,7 @@ function exitFromEditing(saveOnExit)
     CKEDITOR.instances.editor.on( 'change', function( evt ) {
         // getData() returns CKEditor's HTML content.
      //console.log( 'Total bytes: ' + evt.editor.getData().length );
-     modified = true;
-     $('#formResponse').removeClass("alert-success");
-     $('#formResponse').addClass("alert-danger");
-     $('#formResponse').html('Da salvare');
+     notifyChanges();
     });
 
     CKEDITOR.instances.editor.on( 'uploadingImage', function( evt ) {
