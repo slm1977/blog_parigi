@@ -14,6 +14,18 @@ def create_new_page():
     return page_edit()
 
 
+@pages.route("/load_menu_page/<menu_page_index>/")
+def load_menu_page(menu_page_index):
+    try:
+        page = get_pages()[int(menu_page_index)]
+        print("Trovata pagina:%s" % page)
+        if page==None:
+            raise Exception("Impossibile trovare la pagina di menu n.%s" % menu_page_index)
+        return load_page(page.id)
+    except Exception as ex:
+        print ("load_menu_page Exception:%s" % ex)
+        return redirect("/")
+
 @pages.route("/load_page/<page_id>/")
 def load_page(page_id):
     page = Page.query.filter_by(id=page_id).first()

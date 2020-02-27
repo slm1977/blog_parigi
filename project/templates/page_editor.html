@@ -104,10 +104,34 @@
     var modified = false;
     var page_id = {{page.id if page != None else -1 }}
 
+
+ function return_to_page(new_saved)
+ {
+    // se la pagina esisteva già ricarico quella
+    {% if page!= None %}
+             window.location.href="{{url_for('pages.load_page', page_id= page.id)}}";
+    {% else %}
+          // se la pagina non esiste ancora verifico che sia stata salvata
+          // e in tal caso la carico considerandola come all'ultimo posto
+          // altrimenti carico la homepage del sito
+          if (new_saved)
+          {
+             if (page_id==-1)
+                window.location.href="{{url_for('pages.load_menu_page', menu_page_index=-1)}}";
+             else
+                window.location.href="{{url_for('pages.load_page', page_id= page.id)}}";
+             }
+           else
+             window.location.href="/";
+
+    {% endif %}
+ }
  function exitOrSave()
     {
      if (!modified)
-     window.location.href="{{url_for('main.presentazione')}}";
+     {
+        return_to_page(false);
+     }
      else
      {
         $('#confirmExitModal').modal('show');
@@ -138,21 +162,21 @@ function notifyChanges()
      $('#formResponse').html('Da salvare');
 }
 
+
 function exitFromEditing(saveOnExit)
         {
         exitRequest = true;
-        //$('#confirmExitModal').modal('hide');
+
         if (saveOnExit && modified==true)
         {
         $('#saveButton').submit();
         }
         else
         {
-          window.location.href="{{url_for('main.presentazione')}}";
+          return_to_page(false);
         }
 
-          //<a style={'margin:20px;'} href="{{url_for('main.presentazione')}}">Annulla</a>
-          //<button onclick="exitFromEditing()">Esci</button>
+
         }
 
 
@@ -203,7 +227,7 @@ function exitFromEditing(saveOnExit)
                                 $('#formResponse').html(data["message"]);
 
                                 if (exitRequest==true)
-                                window.location.href="{{url_for('main.presentazione')}}";
+                                return_to_page(true);
                             }
                            else
 

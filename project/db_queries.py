@@ -3,8 +3,6 @@ from .models import Page
 
 def get_pages():
     pages = Page.query.order_by(Page.index).all()
-    for p in pages:
-        print(p.menu_title)
     return pages
 
 def add_page_to_db(menu_title, visible, index=None, page_id=None):

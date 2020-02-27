@@ -4,8 +4,8 @@ import os
 
 
 from .ristoranti import ristoranti
-from .itinerari import itinerari
-from .testi import pagine
+#from .itinerari import itinerari
+#from .testi import pagine
 
 from .db_queries import get_pages
 
@@ -15,21 +15,18 @@ main = Blueprint('main', __name__,template_folder='templates',static_folder='sta
 #https://stackoverflow.com/questions/54733662/how-to-send-html-data-to-flask-without-form
 #https://stackoverflow.com/questions/24577349/flask-download-a-file
 
+
+"""
 @main.route("/itinerari/<int:indice>/")
 def caricaItinerario(indice):
     return render_template("blog_itinerario.html", itinerario=itinerari[indice])
 
 
+
 @main.route("/itinerari/")
 def mostraItinerari():
     return render_template("blog_itinerari.html", itinerari=itinerari)
-
-
-
-@main.route("/presentazione/")
-def presentazione():
-    menu = get_pages()
-    return render_template("blog_content.html", pagina=pagine["presentazione"], menu=menu)
+"""
 
 
 
@@ -41,26 +38,18 @@ def home():
 
 
 
-@main.route("/aeroporti/")
-def aeroporti():
-    return render_template("blog_content.html", pagina=pagine["aeroporti"])
-
-
-@main.route("/come_muoversi/")
-def come_muoversi():
-    return render_template("blog_content.html", pagina=pagine["come_muoversi"])
 
 
 @main.route("/inner_book/<quartiere>/")
 def caricaLibroRistorante(quartiere):
-    return render_template("blog_restaurant.html", quartiere=quartiere)
+    return render_template("blog_restaurant.html", quartiere=quartiere,menu=get_pages())
 
 @main.route("/ristoranti/")
 def mostra_ristoranti():
     # (900,550) dimensione del book al 100%
     ord_ristoranti = list(ristoranti.keys())
     ord_ristoranti.sort()
-    return render_template("blog_restaurants.html", ristoranti= ord_ristoranti)
+    return render_template("blog_restaurants.html", ristoranti= ord_ristoranti, menu=get_pages())
     #return book("marais")
 
 
