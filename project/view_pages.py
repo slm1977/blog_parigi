@@ -37,6 +37,9 @@ def load_menu_page(menu_page_index):
 @pages.route("/load_page/<page_id>/")
 def load_page(page_id):
     page = Page.query.filter_by(id=page_id).first()
+    if (not page.visible and not current_user.is_authenticated):
+        return redirect("/login")
+
     f = open(page.path, "r")
     content = f.read()
     f.close()
@@ -67,7 +70,10 @@ def sort_pages():
 def page_edit(page_id=None):
     #send_from_directory("static", 'itinerari/itinerario_01.html')
     #print(url_for("static", filename="itinerari/itinerario_01.html"))
-    if page_id==None or int(page_id)<0:
+    if page_id!=None and int(page_id)<-1:
+        print("pagina non editabile")
+        return redirect("/")
+    elif page_id==None or int(page_id)<0:
         return render_template("page_editor.html", content="", page=None)
     else:
         page = Page.query.filter_by(id=page_id).first()

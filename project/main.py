@@ -49,7 +49,7 @@ def mostra_ristoranti():
     # (900,550) dimensione del book al 100%
     ord_ristoranti = list(ristoranti.keys())
     ord_ristoranti.sort()
-    return render_template("blog_restaurants.html", ristoranti= ord_ristoranti, menu=get_pages())
+    return render_template("blog_restaurants.html", ristoranti= ord_ristoranti, menu=get_pages(), page_id=-2)
     #return book("marais")
 
 

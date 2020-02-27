@@ -23,7 +23,7 @@ def login_post():
     # check if user actually exists
     # take the user supplied password, hash it, and compare it to the hashed password in database
     if not user or not check_password_hash(user.password, password):
-        flash('Please check your login details and try again.')
+        flash('Email o password errate. Verifica le credenziali e riprova.')
         return redirect(url_for('auth.login')) # if user doesn't exist or password is wrong, reload the page
 
     # if the above check passes, then we know the user has the right credentials
@@ -39,15 +39,20 @@ def logout():
 
 
 
-@auth.route('/signup')
+#@auth.route('/signup')
 def signup():
-    return render_template('signup.html')
+    email = ""
+    name = ""
+    password=""
+    #signup_post(email,name,password)
+    return "FORBIDDEN"
 
-@auth.route('/signup', methods=['POST'])
-def signup_post():
-    email = request.form.get('email')
-    name = request.form.get('name')
-    password = request.form.get('password')
+
+#@auth.route('/signup', methods=['POST'])
+def signup_post(email, name, password):
+    #email = request.form.get('email')
+    #name = request.form.get('name')
+    #password = request.form.get('password')
 
     user = User.query.filter_by(email=email).first() # if this returns a user, then the email already exists in database
 

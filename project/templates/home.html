@@ -14,6 +14,7 @@
  -->
 <script>
     $(document).ready(function(){
+        //alert("page_id:" + {{page_id}});
 
     $(".blog_menu").css({
         "color":"#f6b26b",
@@ -54,8 +55,11 @@
 {% block content %}
 
 
-
+{% if current_user.is_authenticated %}
 <div class="container" style="background-image: url({{url_for('static', filename='sfondi/parigiRatatouille_1200.gif')}});">
+{% else %}
+    <div class="container navbar navbar-inverse">
+{% endif %}
 
 <nav class="navbar navbar-inverse">
 <div id="navbarMenuHeroA" class="navbar-menu">
@@ -66,12 +70,12 @@
 
                 <ul class="nav navbar-nav">
                       {% if not current_user.is_authenticated %}
-                            <li><a class="nav-item nav-link" href="{{url_for('auth.login')}}">Login</a></li>
+                            <li><a class="nav-item nav-link" href="{{url_for('auth.login')}}">Area riservata</a></li>
                     {% else %}
                     <li><a href="{{url_for('pages.create_new_page')}}">Nuova pagina</a></li>
                     <li><a href="{{url_for('pages.page_edit',page_id=page_id)}}">Modifica pagina</a></li>
                     <li><a href="{{url_for('pages.sort_pages')}}">Ordina pagine</a></li>
-                    <li><a href="{{url_for('auth.logout')}}">Logout</a></li>
+                    <li><a href="{{url_for('auth.logout')}}">Esci dall'area riservata</a></li>
                     {% endif %}
 
                 </ul>
@@ -91,15 +95,22 @@
     <div class="col-md-3 scrollablePost">
     <!-- Sidebar -->
 
-
     <p></p>
     {% for p in menu %}
+
         {% if current_user.is_authenticated %}
                 <h2>
                     {% if not p.visible %}
                          <span style="color: #fff;" class="glyphicon glyphicon-star" aria-hidden="true"></span>
                     {% endif %}
-                    <a href="{{url_for('pages.load_page', page_id=p.id)}}"  class="blog_menu dancing">{{p.menu_title}}</a>
+                    {% if p.id|int == page_id|int %}
+                    <u>
+                        <a href="{{url_for('pages.load_page', page_id=p.id)}}"  class="blog_menu dancing">{{p.menu_title}}</a>
+                    </u>
+                    {% else %}
+                     <a href="{{url_for('pages.load_page', page_id=p.id)}}"  class="blog_menu dancing">{{p.menu_title}}</a>
+                    {% endif %}
+
                 </h2>
 
         {% else %}

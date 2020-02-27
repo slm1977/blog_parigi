@@ -9,8 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
 </head>
 
+<style>
+    #main_section {
+    background-color: #560707;
+    }
+</style>
+
 <body>
-    <section class="hero is-primary is-fullheight">
+    <section id="main_section">
 
 
             <nav class="navbar">
@@ -20,11 +26,11 @@
                         <div class="navbar-end">
                            <ul>
                                <li>
-                            <a href="/" class="navbar-item">
-                                Home
+                            <a href="{{ url_for('main.home') }}" class="navbar-item">
+                                Torna alla Home del Blog
                             </a>
                                    </li>
-
+                           <!--
                             <li>
                             <a href="{{ url_for('auth.login') }}" class="navbar-item">
                                 Login
@@ -33,9 +39,9 @@
 
 
                             <a href="{{ url_for('auth.logout') }}" class="navbar-item">
-                                Logout
+                                Esci
                             </a>
-
+                             -->
                                </ul>
                     </div>
                 </div>
