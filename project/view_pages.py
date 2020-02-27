@@ -63,14 +63,15 @@ def save_page():
     form_data = request.form['content']
     menu_title = request.form.get('menu_title')
     page_id = request.form.get('id')
+    visible = request.form.get('visible')
     print("Salvo con menu %s" % menu_title)
 
     if page_id==None or int(page_id)<0:
         # crea una nuova pagina sul db e restituisce il path completo dove salvare il file
-        filenameToSave = add_page_to_db(menu_title=menu_title)
+        filenameToSave = add_page_to_db(menu_title=menu_title, visible=visible)
     else:
         # aggiorna la pagina preesistente
-        filenameToSave = update_page(page_id,menu_title)
+        filenameToSave = update_page(page_id,menu_title, visible)
 
     # il file viene creato solo se la pagina è stata aggiunta correttamente sul db
     if filenameToSave!=None:

@@ -13,7 +13,7 @@ main = Blueprint('main', __name__,template_folder='templates',static_folder='sta
 
 #https://stackoverflow.com/questions/10434599/get-the-data-received-in-a-flask-request
 #https://stackoverflow.com/questions/54733662/how-to-send-html-data-to-flask-without-form
-
+#https://stackoverflow.com/questions/24577349/flask-download-a-file
 
 @main.route("/itinerari/<int:indice>/")
 def caricaItinerario(indice):
@@ -26,11 +26,18 @@ def mostraItinerari():
 
 
 
+@main.route("/presentazione/")
+def presentazione():
+    menu = get_pages()
+    return render_template("blog_content.html", pagina=pagine["presentazione"], menu=menu)
+
+
 
 @main.route("/")
-def presentazione():
+def home():
     menu= get_pages()
-    return render_template("blog_content.html", pagina=pagine["presentazione"], menu=menu)
+    page_id = menu[0].id
+    return redirect("/load_page/%s" % page_id)
 
 
 

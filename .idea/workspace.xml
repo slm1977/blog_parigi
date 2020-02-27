@@ -4,14 +4,13 @@
     <list default="true" id="b6556381-9ae8-4122-a423-03111f4720e6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/db_queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/db_queries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/paris_blog_db.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/project/paris_blog_db.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/static/menu_pages/contenuto.html " beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/static/menu_pages/luoghi_da_evitare.html " beforeDir="false" afterPath="$PROJECT_DIR$/project/static/menu_pages/luoghi_da_evitare.html " afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/static/menu_pages/titolo.html " beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/static/menu_pages/wewew.html " beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/static/menu_pages/wewew2222.html " beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/static/menu_pages/page_6.html_deleted_1582223016" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/static/menu_pages/page_7.html_deleted_1582223004" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/static/menu_pages/page_9.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/menu_pages/page_9.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/templates/page_editor.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/page_editor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/templates/page_sorting.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/page_sorting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/view_pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/view_pages.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="285">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
               <folding>
                 <element signature="e#0#110#0" expanded="true" />
               </folding>
@@ -38,8 +37,8 @@
       <file leaf-file-name="view_pages.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/view_pages.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="92" column="21" lean-forward="true" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+            <state relative-caret-position="1425">
+              <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
               <folding>
                 <element signature="e#0#110#0" expanded="true" />
               </folding>
@@ -50,7 +49,7 @@
       <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/lib/python3.7/dist-packages/werkzeug/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
+            <state relative-caret-position="8607">
               <caret line="467" column="4" selection-start-line="467" selection-start-column="4" selection-end-line="467" selection-end-column="4" />
             </state>
           </provider>
@@ -59,8 +58,8 @@
       <file leaf-file-name="db_queries.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/db_queries.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+            <state relative-caret-position="152">
+              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -71,8 +70,8 @@
       <file leaf-file-name="test_db.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/test_db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="152">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -83,8 +82,11 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="33" selection-start-column="33" selection-end-column="33" />
+            <state relative-caret-position="114">
+              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,17 +94,17 @@
       <file leaf-file-name="page_sorting.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/templates/page_sorting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-893">
+            <state relative-caret-position="2280">
               <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page_editor.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="page_editor.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/templates/page_editor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+            <state relative-caret-position="361">
+              <caret line="19" column="130" selection-start-line="19" selection-start-column="130" selection-end-line="19" selection-end-column="130" />
               <folding>
                 <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
               </folding>
@@ -119,15 +121,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/templates/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -140,7 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>url_for(&quot;main</find>
       <find>models</find>
       <find>formResp</find>
       <find>exitFromEditing</find>
@@ -170,6 +162,7 @@
       <find>delete</find>
       <find>redirect</find>
       <find>filter</find>
+      <find>redire</find>
     </findStrings>
     <replaceStrings>
       <replace>itinerario_block</replace>
@@ -216,13 +209,13 @@
         <option value="$PROJECT_DIR$/project/auth.py" />
         <option value="$PROJECT_DIR$/project/test_db.py" />
         <option value="$PROJECT_DIR$/project/__init__.py" />
-        <option value="$PROJECT_DIR$/project/main.py" />
-        <option value="$PROJECT_DIR$/project/models.py" />
         <option value="$PROJECT_DIR$/project/templates/home.html" />
         <option value="$PROJECT_DIR$/project/templates/page_sorting.html" />
         <option value="$PROJECT_DIR$/project/view_pages.py" />
-        <option value="$PROJECT_DIR$/project/db_queries.py" />
+        <option value="$PROJECT_DIR$/project/models.py" />
         <option value="$PROJECT_DIR$/project/templates/page_editor.html" />
+        <option value="$PROJECT_DIR$/project/db_queries.py" />
+        <option value="$PROJECT_DIR$/project/main.py" />
       </list>
     </option>
   </component>
@@ -260,21 +253,7 @@
               <item name="gitBlogMicky" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gitBlogMicky" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gitBlogMicky" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="menu_pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gitBlogMicky" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gitBlogMicky" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gitBlogMicky" type="b2602c69:ProjectViewProjectNode" />
@@ -424,27 +403,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" x="857" y="254" width="270" height="596" id="Project" order="0" sideWeight="0.7386018" visible="true" weight="0.20674406" />
       <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49585405" weight="0.32868218" />
+      <window_info anchor="right" id="R Packages" order="4" />
+      <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.08734107" side_tool="true" weight="0.27526882" />
       <window_info anchor="bottom" id="Run" order="8" sideWeight="0.91265893" weight="0.49461207" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32984293" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3372093" />
+      <window_info id="Structure" order="1" sideWeight="0.26139817" side_tool="true" visible="true" weight="0.20674406" />
       <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.29094827" />
-      <window_info active="true" content_ui="combo" x="857" y="254" width="270" height="596" id="Project" order="0" sideWeight="0.5167173" visible="true" weight="0.25925925" />
-      <window_info anchor="right" id="R Packages" order="4" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.3286638" />
-      <window_info id="Structure" order="1" sideWeight="0.4832827" side_tool="true" visible="true" weight="0.25925925" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.91265893" weight="0.39547414" />
       <window_info id="Favorites" order="2" sideWeight="0.52684563" side_tool="true" weight="0.24875621" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32841614" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="2" />
     </layout>
   </component>
@@ -452,10 +431,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project/templates/blog_restaurants.html">
+    <entry file="file://$PROJECT_DIR$/project/static/js/jquery_sortable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        <state relative-caret-position="5434">
+          <caret line="286" column="36" selection-start-line="286" selection-start-column="31" selection-end-line="286" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -722,9 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
           <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-          <folding>
-            <element signature="e#117#140#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -744,49 +720,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project/templates/page_sorting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-893">
+        <state relative-caret-position="2280">
           <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/lib/python3.7/dist-packages/werkzeug/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
+        <state relative-caret-position="8607">
           <caret line="467" column="4" selection-start-line="467" selection-start-column="4" selection-end-line="467" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#0#110#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/test_db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="152">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/page_editor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="130" selection-start-line="19" selection-start-column="130" selection-end-line="19" selection-end-column="130" />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        <state relative-caret-position="114">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/view_pages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="92" column="21" lean-forward="true" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+        <state relative-caret-position="1425">
+          <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
           <folding>
             <element signature="e#0#110#0" expanded="true" />
           </folding>
@@ -795,20 +774,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project/db_queries.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+        <state relative-caret-position="152">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/page_editor.html">
+    <entry file="file://$PROJECT_DIR$/project/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        <state relative-caret-position="285">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
           <folding>
-            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="e#0#110#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -7,7 +7,7 @@ def get_pages():
         print(p.menu_title)
     return pages
 
-def add_page_to_db(menu_title, index=None, page_id=None):
+def add_page_to_db(menu_title, visible, index=None, page_id=None):
     try:
         if index==None:
             index = Page.query.count()
@@ -16,7 +16,7 @@ def add_page_to_db(menu_title, index=None, page_id=None):
             last_id = Page.query.order_by(Page.id.desc()).first().id
             filename= "page_%s.html" % (last_id+1)
             path = "./project/static/menu_pages/%s" % filename
-            new_page = Page(menu_title=menu_title,path=path, index=int(index))
+            new_page = Page(menu_title=menu_title,path=path, index=int(index), visible=bool(visible))
 
             # add the new page to the database
             db.session.add(new_page)
@@ -30,9 +30,10 @@ def add_page_to_db(menu_title, index=None, page_id=None):
 
     return None
 
-def update_page(page_id, new_menu_title):
+def update_page(page_id, new_menu_title, visible):
     page = Page.query.get(page_id)
     page.menu_title = new_menu_title
+    page.visible = bool(visible)
     db.session.commit()
     return page.path
 
