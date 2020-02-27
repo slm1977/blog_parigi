@@ -17,7 +17,7 @@
 <div class="field">
     <div class="control">
         <label for="visible_state">Rendi la pagina visibile agli utenti: </label>
-        <input class="custom-control-input" type="checkbox"  id="visible_state" {{'checked' if page != None and page.visible==True }}/><br>
+        <input class="custom-control-input" type="checkbox" onchange="notifyChanges()"  id="visible_state" {{'checked' if page != None and page.visible==True }}/><br>
     </div>
 </div>
 
@@ -39,7 +39,7 @@
 
 
     <div id="editor" name="editor_div">
-        <p id="page_content">{{content|safe}}</p>
+       {{content|safe}}
     </div>
 
 </form>
@@ -105,32 +105,26 @@
     var page_id = {{page.id if page != None else -1 }}
 
 
- function return_to_page(new_saved)
+ function return_to_page()
  {
-    // se la pagina esisteva già ricarico quella
-    {% if page!= None %}
-             window.location.href="{{url_for('pages.load_page', page_id= page.id)}}";
-    {% else %}
-          // se la pagina non esiste ancora verifico che sia stata salvata
-          // e in tal caso la carico considerandola come all'ultimo posto
-          // altrimenti carico la homepage del sito
-          if (new_saved)
-          {
-             if (page_id==-1)
-                window.location.href="{{url_for('pages.load_menu_page', menu_page_index=-1)}}";
-             else
-                window.location.href="{{url_for('pages.load_page', page_id= page.id)}}";
-             }
-           else
-             window.location.href="/";
-
-    {% endif %}
+    // se la pagina è stata creata ricarico quella
+    if (page_id>0)
+            {
+             console.log("Ho a che fare con una pagina già esistente");
+             window.location.href=`/load_page/${page_id}/`;
+            }
+        else
+            {
+              window.location.href="/";
+            }
  }
+
+
  function exitOrSave()
     {
      if (!modified)
      {
-        return_to_page(false);
+        return_to_page();
      }
      else
      {
@@ -173,7 +167,7 @@ function exitFromEditing(saveOnExit)
         }
         else
         {
-          return_to_page(false);
+          return_to_page();
         }
 
 
@@ -222,12 +216,15 @@ function exitFromEditing(saveOnExit)
                         if (data["success"]  == true)
                             {
                                 modified = false;
+                                // aggiorno il page_id della pagina!
+                                page_id = parseInt(data["page_id"]);
+
                                 $('#formResponse').removeClass("alert-danger");
                                 $('#formResponse').addClass("alert-success");
                                 $('#formResponse').html(data["message"]);
 
                                 if (exitRequest==true)
-                                return_to_page(true);
+                                return_to_page();
                             }
                            else
 

@@ -92,18 +92,32 @@
     <!-- Sidebar -->
 
 
-            <p></p>
-            {% for p in menu %}
+    <p></p>
+    {% for p in menu %}
+        {% if current_user.is_authenticated %}
+                <h2>
+                    {% if not p.visible %}
+                         <span style="color: #fff;" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    {% endif %}
+                    <a href="{{url_for('pages.load_page', page_id=p.id)}}"  class="blog_menu dancing">{{p.menu_title}}</a>
+                </h2>
+
+        {% else %}
+           {% if p.visible %}
                 <h2>
                     <a href="{{url_for('pages.load_page', page_id=p.id)}}"  class="blog_menu dancing">{{p.menu_title}}</a>
                 </h2>
-           {% endfor %}
+            {% endif %}
+        {% endif %}
+   {% endfor %}
 
 
-
+        {% if current_user.is_authenticated %}
             <h2>
+                <span style="color: #fff;" class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <a href="{{url_for('main.mostra_ristoranti')}}"  class="blog_menu dancing">Dove mangiare</a>
             </h2>
+        {% endif %}
 
 
             <h3 class="blog_menu dancing">
@@ -161,5 +175,6 @@
 
 {% block styles %}
 {{super()}}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 <link rel="stylesheet" href="{{url_for('.static', filename='css/home.css')}}">
 {% endblock %}

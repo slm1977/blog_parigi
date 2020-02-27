@@ -4,7 +4,7 @@ import os
 import time
 from .models import Page
 from . import db
-from .db_queries import get_pages, add_page_to_db, update_page, delete_page, update_pages_index
+from .db_queries import get_pages, add_page_to_db, update_page, delete_page, update_pages_index, get_last_created_page
 
 pages = Blueprint('pages', __name__,template_folder='templates',static_folder='static')
 
@@ -12,6 +12,14 @@ pages = Blueprint('pages', __name__,template_folder='templates',static_folder='s
 @login_required
 def create_new_page():
     return page_edit()
+
+
+@pages.route("/load_last_page/")
+@login_required
+def load_last_created_page():
+    print("Richiamata load_last_page")
+    last_id = Page.query.order_by(Page.id.desc()).first().id
+    return load_page(last_id)
 
 
 @pages.route("/load_menu_page/<menu_page_index>/")
@@ -72,15 +80,22 @@ def page_edit(page_id=None):
 @pages.route("/save/", methods=["POST"])
 @login_required
 def save_page():
-    form_data = request.form['content']
+    form_data = request.form.get('content')
     menu_title = request.form.get('menu_title')
     page_id = request.form.get('id')
-    visible = request.form.get('visible')
+    visible = True if request.form.get('visible')=="true" else False
     print("Salvo con menu %s" % menu_title)
-
+    print("Valore di visibilità %s" % visible)
     if page_id==None or int(page_id)<0:
         # crea una nuova pagina sul db e restituisce il path completo dove salvare il file
-        filenameToSave = add_page_to_db(menu_title=menu_title, visible=visible)
+        newpage = add_page_to_db(menu_title=menu_title, visible=visible)
+        if newpage!=None:
+            page_id = newpage.id
+            filenameToSave =  newpage.path
+        else:
+            page_id = -1
+            filenameToSave = None
+
     else:
         # aggiorna la pagina preesistente
         filenameToSave = update_page(page_id,menu_title, visible)
@@ -92,10 +107,16 @@ def save_page():
         f = open(filenameToSave, "w")
         f.write(form_data)
         f.close()
-        result = {"success" : True, "message" : "Pagina salvata (%s)" % filenameToSave }
+        result = {"success" : True,
+                  "message" : "Pagina salvata (%s)" % filenameToSave,
+                  "page_id" : page_id}
+
         return jsonify(result)
-    result = {"success": False, "message": "Si sono verificati problemi nel salvare la pagina."}
-    return jsonify(result)
+    else:
+        result = {"success": False,
+                  "message": "Impossibile salvare la pagina. Verificare la unicità della voce di menu!",
+                  "page_id" : -1}
+        return jsonify(result)
 
 
 @pages.route("/delete/<page_id>")
